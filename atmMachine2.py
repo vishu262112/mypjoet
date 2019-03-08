@@ -22,4 +22,4 @@ if(card_no==9916):
                   )
 
 else:
-    print('wrong pin')acSAccXczcZ
+    print('wrong pin')

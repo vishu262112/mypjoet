@@ -18,7 +18,8 @@ if(card_no==9916):
         else:
 
             print('PLEASE COLLECT YOUR CASH')
-            print('YOUR CURRENT BALANCE IS',balance)
+            print('YOUR CURRENT BALANCE IS',balance
+                  )
 
 else:
     print('wrong pin')

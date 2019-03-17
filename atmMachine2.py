@@ -4,15 +4,15 @@ card_no = int(input('Enter your card_no\n'))
 if card_no == 9916:
     print('==========     WELCOME     ==========\n     ')
     while 1:
-        print('1.BALANCE ENQUIRY')
+        print('1.BALANCE ENQUIRY')#main option
         print('2.WITHDRAWAL')
         print('3.SERVICE')
         print('4.FAST CASH')
         print('5.EXIT')
         ch = int(input('Enter appropriate number for further operation\n'))
-        if ch == 1:
+        if ch == 1:#to check balance
             print('BALANCE=2000')
-        elif ch == 2:
+        elif ch == 2:#withdawal
             amount = int(input('ENTER THE AMOUNT: MULTIPLE OF 100 or 500\n'))
             balance = balance - amount
             if balance < 500:

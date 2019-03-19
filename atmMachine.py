@@ -4,10 +4,12 @@ password = (input('Enter your password\n'))
 fhand = open('card_pin.txt')
 str = fhand.read()
 if (password[0:4] == str[11:15]) and (card_no[0:4] == str[23:27]):
+    fh2 = open('card_pin',"w")
+
     balance = float(str[35:])
     print('==========     WELCOME     ==========\n     ')
     while 1:
-        print('1.BALANCE ENQUIRY')      #main option
+        print('1.BALANCE ENQUIRY')      #mainoption
         print('2.WITHDRAWAL')
         print('3.SERVICE')
         print('4.FAST CASH')
@@ -15,7 +17,7 @@ if (password[0:4] == str[11:15]) and (card_no[0:4] == str[23:27]):
         ch = int(input('Enter appropriate number for further operation\n'))
         if ch == 1:       #to check balance
             print('BALANCE=',(balance))
-        elif ch == 2:      #withdawal
+        elif ch == 2:      #withdrawal
             amount = int(input('ENTER THE AMOUNT: MULTIPLE OF 100 or 500\n'))
             balance = balance - amount
             if balance < 500:
@@ -88,7 +90,7 @@ if (password[0:4] == str[11:15]) and (card_no[0:4] == str[23:27]):
             exit(0)
 else:
     print('WRONG PIN')
-
+    exit(0)
 
 
 

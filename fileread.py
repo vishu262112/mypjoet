@@ -1,12 +1,6 @@
 
-fhand = open('vis.txt')
-#linecont = 0
-for line in fhand:
-    print(line)
-    #linecont = linecont + 1
-    #for word in line.split():
-       # print(word)
-#print(linecont)
-f= open('vis.txt')
+f = open("card_pin.txt")
 str= f.read()
-print(str)
+print(str[11:15])
+print(str[27:31])
+print(str[42:])
